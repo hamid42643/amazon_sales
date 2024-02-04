@@ -15,7 +15,7 @@ pip install -r requirements.txt
 data_set = r"/Users/hamidhooshmandi/Downloads/WESAD/S2"
 
 
-#### sample data
+# sample data
 ![alt text](image.png)
 
 # data description 
