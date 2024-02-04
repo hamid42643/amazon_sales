@@ -19,38 +19,38 @@ data_set = r"/Users/hamidhooshmandi/Downloads/WESAD/S2"
 ![alt text](image.png)
 
 # data description 
-1. w_ax:
-    1. Mean: Calculate the average wrist movement on the X-axis.
-    2. Real-World Range: Typically between -2.0 and 2.0 (representing acceleration in meters per second squared).
-    3. Example: Detecting wrist movements while typing on a keyboard; a value of 1.5 might indicate rapid typing, and -1.0 could represent a sudden stop.
-2. w_ay:
-    1. Standard Deviation: Measure the variation in arm movement on the Y-axis.
-    2. Real-World Range: Typically between -2.0 and 2.0.
-    3. Example: Arm being at rest or slightly lifted; a value of -0.5 could indicate a stable arm position, while -1.8 might suggest rapid, erratic movements.
-3. c_az:
-    1. Minimum and Maximum: Identify the range of chest movement on the Z-axis.
-    2. Real-World Range: Typically between -5.0 and 5.0.
-    3. Example: Monitoring breathing patterns; a value of -4.5 might represent a deep inhalation, and 4.0 could indicate a forceful exhalation.
-4. c_ecg:
-    1. Median: Find the middle value of heart electrical activity.
-    2. Real-World Range: Typically between -2.0 and 2.0 (in millivolts).
-    3. Example: Observing heart rhythm during a resting state; a value of -0.5 might correspond to a calm heartbeat, while -1.8 could indicate a rapid, irregular heartbeat.
-5. c_emg:
-    1. Standard Deviation: Assess the variability in chest muscle activity.
-    2. Real-World Range: Typically between -5.0 and 5.0 (in millivolts).
-    3. Example: Detecting muscle tension; a value near -4.5 could indicate significant muscle contraction, while 0.2 might represent relaxed muscles.
-6. w_az:
-    1. Mean: Calculate the average wrist rotation on the Z-axis.
-    2. Real-World Range: Typically between -2.0 and 2.0.
-    3. Example: Tracking wrist rotation; a value of 1.0 might show a moderate twist of the wrist, and -2.0 could represent an extreme, full rotation.
-7. w_bvp:
-    1. Percentiles: Determine the 25th and 75th percentiles of wrist blood volume pulse for distribution insights.
-    2. Real-World Range: Typically between 30 and 150 (in beats per minute).
-    3. Example: Measuring heart rate variability; a value of 140 might reflect a high-stress situation, while 60 could indicate a very relaxed state.
-8. w_label:
-    1. Count: Count the occurrences of each label (0 and 1) for stress detection analysis.
-    2. Real-World Range: Binary (0, 1), representing different states or categories.
-    3. Example: Labeling data for stress detection; a 0 could indicate data collected during a period of no stress, and 1 might represent high-stress situations.
+1. w_ax (Wrist Accelerometer X-axis):
+    1. Interpretation: Measure of wrist movement on the X-axis.
+    2. Real-World Range: Typically between -2.0 and 2.0 (m/s²).
+    3. Example: Detecting wrist movements during typing; a value of 1.5 indicates rapid typing, -1.0 represents a sudden stop.
+2. w_ay (Wrist Accelerometer Y-axis):
+    1. Interpretation: Measure of arm movement on the Y-axis.
+    2. Real-World Range: Typically between -2.0 and 2.0 (m/s²).
+    3. Example: Arm at rest or slightly lifted; -0.5 signifies a stable arm, -1.8 suggests rapid, erratic movements.
+3. c_az (Chest Accelerometer Z-axis):
+    1. Interpretation: Measure of chest movement on the Z-axis.
+    2. Real-World Range: Typically between -5.0 and 5.0 (m/s²).
+    3. Example: Monitoring breathing patterns; -4.5 indicates deep inhalation, 4.0 suggests forceful exhalation.
+4. c_ecg (Chest Electrocardiogram):
+    1. Interpretation: Electrical activity of the heart.
+    2. Real-World Range: Typically between -2.0 and 2.0 (mV).
+    3. Example: Observing heart rhythm at rest; -0.5 represents a calm heartbeat, -1.8 indicates a rapid, irregular heartbeat.
+5. c_emg (Chest Electromyography):
+    1. Interpretation: Electrical activity of chest muscles.
+    2. Real-World Range: Typically between -5.0 and 5.0 (mV).
+    3. Example: Detecting muscle tension; -4.5 signifies significant muscle contraction, 0.2 represents relaxed muscles.
+6. w_az (Wrist Accelerometer Z-axis):
+    1. Interpretation: Measure of wrist rotation on the Z-axis.
+    2. Real-World Range: Typically between -2.0 and 2.0 (m/s²).
+    3. Example: Tracking wrist rotation; 1.0 indicates a moderate twist, -2.0 suggests an extreme, full rotation.
+7. w_bvp (Wrist Blood Volume Pulse):
+    1. Interpretation: Measure of blood flow, indicative of heart rate.
+    2. Real-World Range: Typically between 30 and 150 (bpm).
+    3. Example: Measuring heart rate variability; 140 reflects a high-stress situation, 60 indicates a very relaxed state.
+8. w_label (Label):
+    1. Interpretation: Binary classification label (0 for no stress, 1 for stress).
+    2. Real-World Range: Binary (0, 1).
+    3. Example: Labeling data for stress detection; 0 represents no stress, 1 signifies high-stress situations.
 
 
 # simple statistical operations:
@@ -70,7 +70,6 @@ data_set = r"/Users/hamidhooshmandi/Downloads/WESAD/S2"
         a. Percentiles: Determine the 25th and 75th percentiles of wrist blood volume pulse for distribution insights.
     8. w_label:
         a. Count: Count the occurrences of each label (0 and 1) for stress detection analysis.
-
 
 # potential use cases:
 1. Stress Prediction Model:
