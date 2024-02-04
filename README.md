@@ -67,6 +67,25 @@ w_label:
     - Example: Labeling data for stress detection; a 0 could label data collected during a period of no stress.
 
 
+
+# simple operations:
+w_ax:
+Mean: Calculate the average wrist movement on the X-axis.
+w_ay:
+Standard Deviation: Measure the variation in arm movement on the Y-axis.
+c_az:
+Minimum and Maximum: Identify the range of chest movement on the Z-axis.
+c_ecg:
+Median: Find the middle value of heart electrical activity.
+c_emg:
+Standard Deviation: Assess the variability in chest muscle activity.
+w_az:
+Mean: Calculate the average wrist rotation on the Z-axis.
+w_bvp:
+Percentiles: Determine the 25th and 75th percentiles of wrist blood volume pulse for distribution insights.
+w_label:
+Count: Count the occurrences of each label (0 and 1) for stress detection analysis.
+
 # potential use cases:
 1. Stress Prediction Model:
     • Develop a stress prediction model based on HRV and EDA features. Use machine learning techniques to predict stress levels or classify stress states.
