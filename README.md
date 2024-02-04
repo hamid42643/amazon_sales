@@ -1,23 +1,24 @@
-### download Biometrics for stress monitoring dataset here:
+# How to run the code
+#### download Biometrics for stress monitoring dataset here:
 https://www.kaggle.com/datasets/qiriro/stress
 
-### create a new usd_team5 python environment
+#### create a new usd_team5 python environment
 conda create --name usd_team5 python=3.8
 
-### activate new environment
+#### activate new environment
 conda activate usd_team5
 
-### install packages
+#### install packages
 pip install -r requirements.txt
 
-### change data_set variable in stress_detection.ipynb file to the path where WESAD is downloaded:
+#### change data_set variable in stress_detection.ipynb file to the path where WESAD is downloaded:
 data_set = r"/Users/hamidhooshmandi/Downloads/WESAD/S2"
 
 
-### sample data
+#### sample data
 ![alt text](image.png)
 
-### data description 
+# data description 
 w_ax:
     - Full name: Wrist Accelerometer X-axis
     - Measures: Movement on the X-axis of a wrist-worn device
@@ -68,7 +69,7 @@ w_label:
 
 
 
-### simple operations:
+# simple statistical operations:
 w_ax:
 Mean: Calculate the average wrist movement on the X-axis.
 w_ay:
@@ -86,7 +87,8 @@ Percentiles: Determine the 25th and 75th percentiles of wrist blood volume pulse
 w_label:
 Count: Count the occurrences of each label (0 and 1) for stress detection analysis.
 
-### potential use cases:
+
+# potential use cases:
 1. Stress Prediction Model:
     • Develop a stress prediction model based on HRV and EDA features. Use machine learning techniques to predict stress levels or classify stress states.
 2. Exploratory Data Analysis (EDA):
